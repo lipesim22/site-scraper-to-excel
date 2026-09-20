@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+output/
+*.xlsx
+.venv/
+.pytest_cache/
