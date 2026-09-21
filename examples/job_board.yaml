@@ -1,0 +1,19 @@
+# Blank template: swap the url and the selectors for the client's site.
+url: "https://example.com/jobs"
+item_selector: ".job-card"
+key_field: "title"
+fields:
+  - name: "title"
+    selector: "h2"
+  - name: "company"
+    selector: ".company"
+  - name: "location"
+    selector: ".location"
+  - name: "link"
+    selector: "a"
+    attribute: "href"
+next_page_selector: "a.next"
+pages: 1
+delay_seconds: 1.5
+output_file: "output/jobs.xlsx"
+sheet: "Jobs"
