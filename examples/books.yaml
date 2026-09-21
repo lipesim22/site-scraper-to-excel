@@ -1,0 +1,21 @@
+# Real example: books.toscrape.com is a site built for scraping practice.
+url: "https://books.toscrape.com/"
+item_selector: "article.product_pod"
+key_field: "title"
+fields:
+  - name: "title"
+    selector: "h3 a"
+    attribute: "title"
+  - name: "price"
+    selector: "p.price_color"
+  - name: "availability"
+    selector: "p.instock.availability"
+  - name: "link"
+    selector: "h3 a"
+    attribute: "href"
+next_page_selector: "li.next a"
+pages: 2
+delay_seconds: 1.0
+output_file: "output/books.xlsx"
+sheet: "Books"
+
